@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Stupid App</title>
+        <title>Learn Javascript</title>
+        <link rel = "stylesheet" href="style.css">
+        
+        
     </head>
-    <body>
-        <div>this is just a stupid app that does nothing lol</div>
-        <script src="app.js"> </script>
-    </body>
+     <body>
+       <p class = "pg-purpose">This page is used to learn Javascript for React development.</p> 
+   <form>
+     <input type="radio" name="radioGroup" id="radio1" value="ES6+ Features">
+     <label class = "ch-heading1">ES6+ Features:</label>
+    </form>
+        <ul>
+                <li>Arrow functions</li>
+                <li>Template literals</li>   
+                <li>Destructuring assignment</li>  
+                <li>Spread/rest operators</li>  
+                <li> let and const declarations</li>  
+                <li> Classes and inheritance</li>  
+    
+        </ul>
+        <button onclick="uncheckRadio()"> Uncheck</button>
+     </body>
+     <script>
+      
+        function checkRadio() {
+          document.getElementById("radio1").checked = true;
+        }
+    
+        
+     function uncheckRadio() {
+          document.getElementById("radio1").checked = false;
+        }
+        
+   
+      </script>
 
 </html>
